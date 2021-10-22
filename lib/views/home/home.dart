@@ -16,11 +16,11 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int _currentIndex = 0;
   final List<Widget> _views = [
-    const ActivityView(),
-    const ChallengeView(),
-    const ProfileView(),
     const DashboardView(),
-    const WorkoutView()
+    const WorkoutView(),
+    const ChallengeView(),
+    const ActivityView(),
+    const ProfileView(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -39,7 +39,7 @@ class _HomeState extends State<Home> {
         },
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         type: BottomNavigationBarType.fixed,
-        items: [
+        items: const[
           
           BottomNavigationBarItem(
             icon: Icon(UniconsLine.home_alt),
