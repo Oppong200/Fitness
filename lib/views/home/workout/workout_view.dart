@@ -11,7 +11,7 @@ class WorkoutView extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: ListView(
           children: [
-            ListTile(
+            const ListTile(
               leading: Text(
                 'Workouts',
                 style: TextStyle(
@@ -28,13 +28,13 @@ class WorkoutView extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15),
               ),
-              color: Color(0XFFACADFF),
+              color: const Color(0XFFACADFF),
               child: ListTile(
                 
-                title: Text('Waist Cinching Workout\n75% Completed'),
+                title: const Text('Waist Cinching Workout\n75% Completed'),
                 trailing: TextButton(
                   onPressed: null,
-                  child: Text(
+                  child: const Text(
                     'Continue',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
